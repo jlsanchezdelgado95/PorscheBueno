@@ -1,0 +1,49 @@
+.item1{ grid-area:image1;}
+.item2{ grid-area:image2;}
+.item3{ grid-area:image3;}
+.item4{ grid-area:image4;}
+.item5{ grid-area:image5;}
+.item6{ grid-area:image6;}
+.item7{ grid-area:image7;}
+.item8{ grid-area:image8;}
+.item9{ grid-area:image9;}
+
+.descubreCoche1{
+    grid-area:descubreCoche1;
+    padding-left: 80px;
+}
+.descubreCoche2{grid-area:descubreCoche2;}
+.descubreCoche3{grid-area:descubreCoche3;}
+.descubreCoche4{grid-area:descubreCoche4;}
+.textDescubre1{
+    grid-area:textDescubre1;
+    padding-left: 80px;
+}
+.textDescubre2{grid-area:textDescubre2;}
+.textDescubre3{grid-area:textDescubre3;}
+.textDescubre4{grid-area:textDescubre4;}
+
+.grid-descubra{
+    width: 100%;
+    display:grid;
+    text-align:center;
+    grid-template-areas:
+    'descubreCoche1 descubreCoche2 descubreCoche3 descubreCoche4'
+    'textDescubre1 textDescubre2 textDescubre3 textDescubre4';
+}
+
+.grid-container{
+    width: 100%;
+    display:grid;
+    text-align:center;
+    grid-template-areas:
+    'image1 image1 image2 image3 image4 image4'
+    'image1 image1 image7 image7 image4 image4'
+    'image5 image6 image7 image7 image8 image9';
+}
+.grid-container > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
