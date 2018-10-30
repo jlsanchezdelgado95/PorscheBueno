@@ -15,13 +15,21 @@
 .descubreCoche2{grid-area:descubreCoche2;}
 .descubreCoche3{grid-area:descubreCoche3;}
 .descubreCoche4{grid-area:descubreCoche4;}
-.textDescubre1{
+/*.textDescubre1{Colocar en el scss de texto
     grid-area:textDescubre1;
     padding-left: 80px;
-}
+}*/
 .textDescubre2{grid-area:textDescubre2;}
 .textDescubre3{grid-area:textDescubre3;}
 .textDescubre4{grid-area:textDescubre4;}
+
+.grid{
+    display: grid;
+}
+
+.gridModelos{
+    grid-template-columns:repeat(5,minmax(100px, max-content));
+}
 
 .grid-descubra{
     width: 100%;
