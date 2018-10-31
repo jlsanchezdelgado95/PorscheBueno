@@ -18,7 +18,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "bash deploy/deploy.sh",
-    "onchange": "bash deploy/onchange.sh"
+    "onchange": "onchange -v './public_html/**/*.scss' -- npm run deploy"
   },
   "repository": {
     "type": "git",
