@@ -1,8 +1,32 @@
 {
-    "name": "Porsche",
-    "version": "1.0.0",
-    "keywords": ["util", "functional", "server", "client", "browser"],
-    "author": "Alumno",
-    "contributors": [],
-    "dependencies": {}
+  "name": "porsche",
+  "version": "1.0.0",
+  "keywords": [
+    "util",
+    "functional",
+    "server",
+    "client",
+    "browser"
+  ],
+  "author": "Alumno",
+  "contributors": [],
+  "dependencies": {
+    "onchange": "^5.0.2"
+  },
+  "description": "",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "bash deploy/deploy.sh",
+    "onchange": "bash deploy/onchange.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlsanchezdelgado95/PorscheBueno.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jlsanchezdelgado95/PorscheBueno/issues"
+  },
+  "homepage": "https://github.com/jlsanchezdelgado95/PorscheBueno#readme"
 }
