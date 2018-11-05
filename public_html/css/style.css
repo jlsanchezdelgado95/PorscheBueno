@@ -433,8 +433,7 @@ h1 {
   grid-area: image9; }
 
 .descubreCoche1 {
-  grid-area: descubreCoche1;
-  padding-left: 80px; }
+  grid-area: descubreCoche1; }
 
 .descubreCoche2 {
   grid-area: descubreCoche2; }
@@ -444,6 +443,9 @@ h1 {
 
 .descubreCoche4 {
   grid-area: descubreCoche4; }
+
+.descubreCoche5 {
+  grid-area: descubreCoche5; }
 
 /*.textDescubre1{Colocar en el scss de texto
     grid-area:textDescubre1;
@@ -458,17 +460,32 @@ h1 {
 .textDescubre4 {
   grid-area: textDescubre4; }
 
+.textDescubre5 {
+  grid-area: textDescubre5; }
+
 .grid {
   display: grid; }
 
-.gridModelos {
-  grid-template-columns: repeat(5, minmax(100px, max-content)); }
+.grid--pannel--modelo {
+  padding-left: 10%;
+  padding-right: 10%; }
 
-.grid-descubra {
+.grid--5col {
   width: 100%;
-  display: grid;
   text-align: center;
-  grid-template-areas: 'descubreCoche1 descubreCoche2 descubreCoche3 descubreCoche4' 'textDescubre1 textDescubre2 textDescubre3 textDescubre4'; }
+  grid-template-areas: 'descubreCoche1 descubreCoche2 descubreCoche3 descubreCoche4 descubreCoche5'; }
+
+@media (max-width: 1440px) {
+  .grid--5col {
+    grid-template-areas: 'descubreCoche1 descubreCoche2 descubre3' 'descubreCoche4 descubreCoche5'; } }
+
+@media (max-width: 960px) {
+  .grid--5col {
+    grid-template-areas: 'descubreCoche1 descubreCoche2' 'descubreCoche3 descubreCoche4' 'descubreCoche5'; } }
+
+@media (max-width: 480px) {
+  .grid--5col {
+    grid-template-areas: 'descubreCoche1' 'descubreCoche2' 'descubreCoche3' 'descubreCoche4' 'descubreCoche5'; } }
 
 .grid-container {
   width: 100%;
@@ -480,3 +497,15 @@ h1 {
   text-align: center;
   padding: 20px 0;
   font-size: 30px; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 05-nov-2018, 9:35:54
+    Author     : Kokekui
+*/
+.image__modelos {
+  width: 320px; }

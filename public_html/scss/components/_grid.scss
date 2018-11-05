@@ -10,11 +10,11 @@
 
 .descubreCoche1{
     grid-area:descubreCoche1;
-    padding-left: 80px;
 }
 .descubreCoche2{grid-area:descubreCoche2;}
 .descubreCoche3{grid-area:descubreCoche3;}
 .descubreCoche4{grid-area:descubreCoche4;}
+.descubreCoche5{grid-area:descubreCoche5;}
 /*.textDescubre1{Colocar en el scss de texto
     grid-area:textDescubre1;
     padding-left: 80px;
@@ -22,22 +22,48 @@
 .textDescubre2{grid-area:textDescubre2;}
 .textDescubre3{grid-area:textDescubre3;}
 .textDescubre4{grid-area:textDescubre4;}
+.textDescubre5{grid-area:textDescubre5;}
 
 .grid{
     display: grid;
 }
 
-.gridModelos{
-    grid-template-columns:repeat(5,minmax(100px, max-content));
+.grid--pannel--modelo{
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
-.grid-descubra{
+.grid--5col{
     width: 100%;
-    display:grid;
     text-align:center;
     grid-template-areas:
-    'descubreCoche1 descubreCoche2 descubreCoche3 descubreCoche4'
-    'textDescubre1 textDescubre2 textDescubre3 textDescubre4';
+        'descubreCoche1 descubreCoche2 descubreCoche3 descubreCoche4 descubreCoche5';
+}
+
+@media (max-width:1440px){
+    .grid--5col{
+        grid-template-areas:
+            'descubreCoche1 descubreCoche2 descubre3'
+            'descubreCoche4 descubreCoche5';
+    }
+}
+@media (max-width:960px){
+    .grid--5col{
+        grid-template-areas:
+            'descubreCoche1 descubreCoche2'
+            'descubreCoche3 descubreCoche4'
+            'descubreCoche5';
+    }
+}
+@media (max-width:480px){
+    .grid--5col{
+        grid-template-areas:
+            'descubreCoche1'
+            'descubreCoche2'
+            'descubreCoche3'
+            'descubreCoche4'
+            'descubreCoche5';
+    }
 }
 
 .grid-container{
@@ -45,13 +71,13 @@
     display:grid;
     text-align:center;
     grid-template-areas:
-    'image1 image1 image2 image3 image4 image4'
-    'image1 image1 image7 image7 image4 image4'
-    'image5 image6 image7 image7 image8 image9';
+        'image1 image1 image2 image3 image4 image4'
+        'image1 image1 image7 image7 image4 image4'
+        'image5 image6 image7 image7 image8 image9';
 }
 .grid-container > div {
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
-  }
+}
 
