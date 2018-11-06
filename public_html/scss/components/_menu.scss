@@ -42,4 +42,7 @@ li a:hover {
     li a:hover {
         background-color: $hooverMenu;
     }
+    li:nth-child(1){
+        margin-right: auto;
+    }
 }

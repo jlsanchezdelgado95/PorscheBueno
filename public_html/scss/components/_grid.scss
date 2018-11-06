@@ -8,61 +8,68 @@
 .item8{ grid-area:image8;}
 .item9{ grid-area:image9;}
 
-.descubreCoche1{
-    grid-area:descubreCoche1;
-}
-.descubreCoche2{grid-area:descubreCoche2;}
-.descubreCoche3{grid-area:descubreCoche3;}
-.descubreCoche4{grid-area:descubreCoche4;}
-.descubreCoche5{grid-area:descubreCoche5;}
-/*.textDescubre1{Colocar en el scss de texto
-    grid-area:textDescubre1;
-    padding-left: 80px;
-}*/
-.textDescubre2{grid-area:textDescubre2;}
-.textDescubre3{grid-area:textDescubre3;}
-.textDescubre4{grid-area:textDescubre4;}
-.textDescubre5{grid-area:textDescubre5;}
+.configureCoche1{grid-area:configureCoche1;}
+.configureCoche2{grid-area:configureCoche2;}
+.configureCoche3{grid-area:configureCoche3;}
+
+.modeloCoche1{grid-area:modeloCoche1;}
+.modeloCoche2{grid-area:modeloCoche2;}
+.modeloCoche3{grid-area:modeloCoche3;}
+.modeloCoche4{grid-area:modeloCoche4;}
+.modeloeCoche5{grid-area:modeloCoche5;}
 
 .grid{
     display: grid;
 }
 
-.grid--pannel--modelo{
-    padding-left: 10%;
-    padding-right: 10%;
+.grid--3col{
+    width: 100%;
+    grid-template-areas:
+        'configureCoche1 configureCoche2 configureCoche3';
 }
 
 .grid--5col{
     width: 100%;
     text-align:center;
     grid-template-areas:
-        'descubreCoche1 descubreCoche2 descubreCoche3 descubreCoche4 descubreCoche5';
+        'modeloCoche1 modeloCoche2 modeloCoche3 modeloCoche4 modeloCoche5';
 }
 
 @media (max-width:1440px){
     .grid--5col{
         grid-template-areas:
-            'descubreCoche1 descubreCoche2 descubre3'
-            'descubreCoche4 descubreCoche5';
+            'modeloCoche1 modeloCoche2 modeloCoche3'
+            'modeloCoche4 modeloCoche5';
+    }
+    .grid--3col{
+        grid-template-areas:
+            'configureCoche1 configureCoche2'
+            'configureCoche3';
     }
 }
 @media (max-width:960px){
     .grid--5col{
         grid-template-areas:
-            'descubreCoche1 descubreCoche2'
-            'descubreCoche3 descubreCoche4'
-            'descubreCoche5';
+            'modeloCoche1 modeloCoche2'
+            'modeloCoche3 modeloCoche4'
+            'modeloCoche5';
     }
 }
 @media (max-width:480px){
     .grid--5col{
         grid-template-areas:
-            'descubreCoche1'
-            'descubreCoche2'
-            'descubreCoche3'
-            'descubreCoche4'
-            'descubreCoche5';
+            'modeloCoche1'
+            'modeloCoche2'
+            'modeloCoche3'
+            'modeloCoche4'
+            'modeloCoche5';
+    }
+
+    .grid--3col{
+        grid-template-areas:
+            'configureCoche1'
+            'configureCoche2'
+            'configureCoche3';
     }
 }
 
