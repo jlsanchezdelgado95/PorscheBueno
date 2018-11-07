@@ -6,7 +6,6 @@ Lechuga
 potato
 ldoadasd
 
-adadija
 
 iasdjasdj
 
