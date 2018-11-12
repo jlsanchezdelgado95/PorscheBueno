@@ -4,16 +4,11 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : 06-nov-2018, 12:10:15
+    Created on : 12-nov-2018, 10:43:15
     Author     : Kokekui
 */
-#div__modelos{
-    @include debug;
-    text-align: center;
-    margin: 0 auto;
-}
-#div_configure{
-    @include debug;
-    text-align: center;
-    margin: 0 auto;
+@mixin debug{
+    @if($debug==1){
+        border:5px solid red;
+    }
 }

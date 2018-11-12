@@ -7,7 +7,15 @@ and open the template in the editor.
     Created on : 16-oct-2018, 12:24:14
     Author     : Alumno
 */
-/* Windows10 */
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12-nov-2018, 10:43:15
+    Author     : Kokekui
+*/
 /* http://meyerweb.com/eric/tools/css/reset/ */
 /* v1.0 | 20080212 */
 html, body, div, span, applet, object, iframe,
@@ -507,15 +515,18 @@ and open the template in the editor.
     Created on : 05-nov-2018, 9:35:54
     Author     : Kokekui
 */
-.image-centrado1 {
+.image {
+  display: block; }
+
+.image--centrado1 {
   display: block;
   margin-left: auto;
   margin-right: auto; }
 
-.image-modelos {
+.image--modelos {
   width: 320px; }
 
-.image-configure {
+.image--configure {
   width: 600px; }
 
 /*
