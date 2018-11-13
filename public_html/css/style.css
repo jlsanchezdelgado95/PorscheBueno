@@ -413,9 +413,6 @@ li a:hover {
 .menu li:nth-child(1) {
   margin-right: auto; }
 
-h1 {
-  display: inline-block; }
-
 .item1 {
   grid-area: image1; }
 
@@ -452,6 +449,18 @@ h1 {
 .configureCoche3 {
   grid-area: configureCoche3; }
 
+.asistenteCoche1 {
+  grid-area: asistenteCoche1; }
+
+.asistenteCoche2 {
+  grid-area: asistenteCoche2; }
+
+.asistenteCoche3 {
+  grid-area: asistenteCoche3; }
+
+.asistenteCoche4 {
+  grid-area: asistenteCoche4; }
+
 .modeloCoche1 {
   grid-area: modeloCoche1; }
 
@@ -468,15 +477,46 @@ h1 {
   grid-area: modeloCoche5; }
 
 .grid {
-  display: grid; }
+  display: grid;
+  text-align: center; }
+
+.grid--1col {
+  width: 100px; }
+
+.grid--2col {
+  width: 100px; }
+
+.grid--3col {
+  width: 100px; }
+
+.grid--4col {
+  width: 100px; }
+
+.grid--5col {
+  width: 100px; }
+
+.grid--6col {
+  width: 100px; }
+
+.grid--7col {
+  width: 100px; }
+
+.grid--8col {
+  width: 100px; }
+
+.grid--9col {
+  width: 100px; }
 
 .grid--3col {
   width: 100%;
   grid-template-areas: 'configureCoche1 configureCoche2 configureCoche3'; }
 
+.grid--asistente {
+  width: 100%;
+  grid-template-areas: 'asistenteCoche1 asistenteCoche1 asistenteCoche2 asistenteCoche3 asistenteCoche4'; }
+
 .grid--5col {
   width: 100%;
-  text-align: center;
   grid-template-areas: 'modeloCoche1 modeloCoche2 modeloCoche3 modeloCoche4 modeloCoche5'; }
 
 @media (max-width: 1440px) {
@@ -516,7 +556,7 @@ and open the template in the editor.
     Author     : Kokekui
 */
 .image {
-  display: block; }
+  display: inline; }
 
 .image--centrado1 {
   display: block;
@@ -529,19 +569,15 @@ and open the template in the editor.
 .image--configure {
   width: 600px; }
 
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 06-nov-2018, 12:10:15
-    Author     : Kokekui
-*/
-#div__modelos {
-  text-align: center;
-  margin: 0 auto; }
+.image--asistente {
+  width: 100%;
+  height: 320px; }
 
-#div_configure {
-  text-align: center;
-  margin: 0 auto; }
+span {
+  font-size: 15px; }
+
+.texto--centrado {
+  text-align: center; }
+
+h1 {
+  text-align: center; }

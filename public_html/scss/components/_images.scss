@@ -9,7 +9,7 @@ and open the template in the editor.
 */
 @include debug;
 .image{
-    display: block;
+    display: inline;
 }
 .image--centrado1{
     display: block;
@@ -22,4 +22,8 @@ and open the template in the editor.
 
 .image--configure{
     width: 600px;
+}
+.image--asistente{
+    width:100%;
+    height: 320px;
 }

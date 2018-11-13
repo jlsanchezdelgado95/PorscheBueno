@@ -12,14 +12,24 @@
 .configureCoche2{grid-area:configureCoche2;}
 .configureCoche3{grid-area:configureCoche3;}
 
+.asistenteCoche1{grid-area:asistenteCoche1;}
+.asistenteCoche2{grid-area:asistenteCoche2;}
+.asistenteCoche3{grid-area:asistenteCoche3;}
+.asistenteCoche4{grid-area:asistenteCoche4;}
+
 .modeloCoche1{grid-area:modeloCoche1;}
 .modeloCoche2{grid-area:modeloCoche2;}
 .modeloCoche3{grid-area:modeloCoche3;}
 .modeloCoche4{grid-area:modeloCoche4;}
 .modeloeCoche5{grid-area:modeloCoche5;}
-
 .grid{
     display: grid;
+    text-align: center;
+}
+@for $i from 1 to $totalColumnas{
+.grid--#{$i}col{
+    width:100px;
+}
 }
 
 .grid--3col{
@@ -27,10 +37,14 @@
     grid-template-areas:
         'configureCoche1 configureCoche2 configureCoche3';
 }
+.grid--asistente{
+    width: 100%;
+    grid-template-areas:
+        'asistenteCoche1 asistenteCoche1 asistenteCoche2 asistenteCoche3 asistenteCoche4';
+}
 
 .grid--5col{
     width: 100%;
-    text-align:center;
     grid-template-areas:
         'modeloCoche1 modeloCoche2 modeloCoche3 modeloCoche4 modeloCoche5';
 }
