@@ -413,31 +413,31 @@ li a:hover {
 .menu li:nth-child(1) {
   margin-right: auto; }
 
-.item1 {
+.comunidad__area1 {
   grid-area: image1; }
 
-.item2 {
+.comunidad__area2 {
   grid-area: image2; }
 
-.item3 {
+.comunidad__area3 {
   grid-area: image3; }
 
-.item4 {
+.comunidad__area4 {
   grid-area: image4; }
 
-.item5 {
+.comunidad__area5 {
   grid-area: image5; }
 
-.item6 {
+.comunidad__area6 {
   grid-area: image6; }
 
-.item7 {
+.comunidad__area7 {
   grid-area: image7; }
 
-.item8 {
+.comunidad__area8 {
   grid-area: image8; }
 
-.item9 {
+.comunidad__area9 {
   grid-area: image9; }
 
 .configureCoche1 {
@@ -535,11 +535,14 @@ li a:hover {
   .grid--3col {
     grid-template-areas: 'configureCoche1' 'configureCoche2' 'configureCoche3'; } }
 
-.grid-container {
-  width: 100%;
+.grid--complicado {
   display: grid;
   text-align: center;
-  grid-template-areas: 'image1 image1 image2 image3 image4 image4' 'image1 image1 image7 image7 image4 image4' 'image5 image6 image7 image7 image8 image9'; }
+  grid-template-areas: 'image1 image1 image2 image3 image4 image4' 'image1 image1 image7 image7 image4 image4' 'image5 image6 image7 image7 image8 image9';
+  width: 1200px;
+  grid-gap: 0px;
+  justify-items: center;
+  margin: 0 auto; }
 
 .grid-container > div {
   text-align: center;
@@ -572,6 +575,18 @@ and open the template in the editor.
 .image--asistente {
   width: 100%;
   height: 320px; }
+
+.image--comunidad-pequenyo {
+  width: 200px;
+  height: 200px; }
+
+.image--comunidad-grande {
+  width: 400px;
+  height: 350px; }
+
+.image--comunidad {
+  width: 100%;
+  height: 100%; }
 
 span {
   font-size: 15px; }

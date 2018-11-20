@@ -1,12 +1,12 @@
-.item1{ grid-area:image1;}
-.item2{ grid-area:image2;}
-.item3{ grid-area:image3;}
-.item4{ grid-area:image4;}
-.item5{ grid-area:image5;}
-.item6{ grid-area:image6;}
-.item7{ grid-area:image7;}
-.item8{ grid-area:image8;}
-.item9{ grid-area:image9;}
+.comunidad__area1{ grid-area:image1;}
+.comunidad__area2{ grid-area:image2;}
+.comunidad__area3{ grid-area:image3;}
+.comunidad__area4{ grid-area:image4;}
+.comunidad__area5{ grid-area:image5;}
+.comunidad__area6{ grid-area:image6;}
+.comunidad__area7{ grid-area:image7;}
+.comunidad__area8{ grid-area:image8;}
+.comunidad__area9{ grid-area:image9;}
 
 .configureCoche1{grid-area:configureCoche1;}
 .configureCoche2{grid-area:configureCoche2;}
@@ -27,9 +27,9 @@
     text-align: center;
 }
 @for $i from 1 to $totalColumnas{
-.grid--#{$i}col{
-    width:100px;
-}
+    .grid--#{$i}col{
+        width:100px;
+    }
 }
 
 .grid--3col{
@@ -48,6 +48,8 @@
     grid-template-areas:
         'modeloCoche1 modeloCoche2 modeloCoche3 modeloCoche4 modeloCoche5';
 }
+
+
 
 @media (max-width:1440px){
     .grid--5col{
@@ -87,14 +89,17 @@
     }
 }
 
-.grid-container{
-    width: 100%;
+.grid--complicado{
     display:grid;
     text-align:center;
     grid-template-areas:
         'image1 image1 image2 image3 image4 image4'
         'image1 image1 image7 image7 image4 image4'
         'image5 image6 image7 image7 image8 image9';
+    width:1200px;
+    grid-gap:0px;
+    justify-items: center;
+    margin: 0 auto;
 }
 .grid-container > div {
     text-align: center;
