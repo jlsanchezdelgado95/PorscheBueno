@@ -24,7 +24,7 @@
 .modeloeCoche5{grid-area:modeloCoche5;}
 .grid{
     display: grid;
-    text-align: center;
+    justify-content: center;
 }
 @for $i from 1 to $totalColumnas{
     .grid--#{$i}col{

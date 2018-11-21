@@ -6,79 +6,110 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Porsche</title>
+        <title>Porsche España</title>
         <link rel="stylesheet" type="text/css" href="./css/style.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-    <nav class="menu">
-    <ul>
-  <li><a href="">Home</a></li>
-  <li><a href="">News</a></li>
-  <li><a href="">Contact</a></li>
-  <li><a href="">About</a></li>
-</ul>
-        </nav><!--Cambiar las image, por card, para alinear-->
+        <header class="flex flex--vertical">
+            <img class="logo" src="./images/logo_Porsche.png" />
+            <ul class="menu-principal">
+                <li class="menu-principal__item"><a href="">Home</a></li>
+                <li class="menu-principal__item"><a href="">News</a></li>
+                <li class="menu-principal__item"><a href="">Contact</a></li>
+                <li class="menu-principal__item"><a href="">About</a></li>
+            </ul>
+        </header>
         <img class="image--centrado1" src="images/fondo-porsche.jpg" />
-    <h1 class="texto--centrado">Modelos</h1>
-    <div class="grid grid--col5">
-        <div><img class="image image--modelos" src="images/718.jpg" />
-            <!--<span>></span><span>718</span>-->
-        <img class="image image--modelos" src="images/911.jpg" />
-        <img class="image image--modelos" src="images/panamera.jpg" />
-        <img class="image image--modelos" src="images/macan.jpg" />
-        <img class="image image--modelos" src="images/cayenne.jpg" /></div>
-    </div>
-    <br />
-    
-    <h1>Configure su Porsche</h1>
-    <br />
-    <div class="grid grid--3col">
-    <img class="image image--configure" src="images/configure-718.jpg" />
-    <img class="image image--configure" src="images/configure-911.jpg" />
-    <img class="image image--configure" src="images/configure-panamera.jpg" />
-    </div>
-    <br />
-    <h1>Asistente de compra</h1>
-    <br />
-    <div class="grid grid--asistente">
-    <img class="image image--asistente" src="images/asistente-1.jpg" />
-    <img class="image image--asistente" src="images/asistente-2.jpg" />
-    <img class="image image--asistente" src="images/asistente-3.jpg" />
-    <img class="image image--asistente" src="images/asistente-4.jpg" />
-    </div>
-    <br />
-    <h1>Comunidad de Porsche</h1>
-    <br />
-    <section class="grid grid--complicado">
-        <div class="comunidad__area1"><img class="image image--comunidad" src="images/comunidad1.PNG" /></div>
-        <div class="comunidad__area2"><img class="image image--comunidad" src="images/comunidad2.jpg" /></div>
-        <div class="comunidad__area3"><img class="image image--comunidad" src="images/comunidad3.PNG" /></div>
-        <div class="comunidad__area4"><img class="image image--comunidad" src="images/comunidad4.PNG" /></div>
-        <div class="comunidad__area5"><img class="image image--comunidad" src="images/comunidad5.PNG" /></div>
-        <div class="comunidad__area6"><img class="image image--comunidad" src="images/comunidad6.jpg" /></div>
-        <div class="comunidad__area7"><img class="image image--comunidad" src="images/comunidad7.jpg" /></div>
-        <div class="comunidad__area8"><img class="image image--comunidad" src="images/comunidad8.jpg" /></div>
-        <div class="comunidad__area9"><img class="image image--comunidad" src="images/comunidad9.jpg" /></div>
-    </section>
-    <div id = "button" class="button__align--right"><!--cambiarlo-->
-        <button class="button__align--right">
-        <img src="images/botonCargarMas.PNG"></button>
-    </div>
-    <br />
-    <p>
-        Descubre Porsche
-    </p>
-    <div class="grid grid--asistente">
-        <img class="image--descubre" src="images/descubre1.jpg" />
-        <img class="image--descubre" src="images/descubre2.jpg" />
-        <img class="image--descubre" src="images/descubre3.jpg" />
-        <img class="image--descubre" src="images/descubre4.jpg" />
-        <span class="textDescubre1">>Tequipment Sound & Design.</span>
-        <span class="textDescubre2">> Porsche Exlusive Manufaktur.</span>
-        <span class="textDescubre3">> Radiant Power.</span>
-        <span class="textDescubre4">> Kit de Bienvenida.</span>
-    </div>
+        <h1 class="texto--centrado">Modelos</h1><!-- MODELOS -->
+        <div class="grid grid--5col">
+            <div class="contenedor">
+                <img class="image image--modelos" src="images/718.jpg" />
+                <div class="texto--dentro-imagen">718</div>
+            </div>
+            <div class="contenedor">
+                <img class="image image--modelos" src="images/911.jpg" />
+                <div class="texto--dentro-imagen">718</div>
+            </div>
+            <div class="contenedor">
+                <img class="image image--modelos" src="images/panamera.jpg" />
+                <div class="texto--dentro-imagen">718</div>
+            </div>
+            <div class="contenedor">
+                <img class="image image--modelos" src="images/macan.jpg" />
+                <div class="texto--dentro-imagen">718</div>
+            </div>
+            <div class="contenedor">
+                <img class="image image--modelos" src="images/cayenne.jpg" />
+                <div class="texto--dentro-imagen">718</div>
+            </div>
+        </div>
+        <br />
+
+        <h1>Configure su Porsche</h1><!-- CONFIGURE -->
+        <br />
+        <div class="grid grid--3col">
+            <img class="image image--configure" src="images/configure-718.jpg" />
+            <img class="image image--configure" src="images/configure-911.jpg" />
+            <img class="image image--configure" src="images/configure-panamera.jpg" />
+        </div>
+        <br />
+        <h1>Asistente de compra</h1><!-- ASISTENTE -->
+        <br />
+        <div class="grid grid--asistente">
+            <img class="image image--4col" src="images/asistente-1.jpg" />
+            <img class="image image--4col" src="images/asistente-2.jpg" />
+            <img class="image image--4col" src="images/asistente-3.jpg" />
+            <img class="image image--4col" src="images/asistente-4.jpg" />
+        </div>
+        <br />
+        <h1>Comunidad de Porsche</h1>
+        <br />
+        <section class="grid grid--complicado"><!-- COMUNIDAD -->
+            <div class="comunidad__area1">
+                <img class="image image--comunidad" src="images/comunidad1.PNG" />
+            </div>
+            <div class="comunidad__area2">
+                <img class="image image--comunidad" src="images/comunidad2.jpg" />
+            </div>
+            <div class="comunidad__area3">
+                <img class="image image--comunidad" src="images/comunidad3.PNG" />
+            </div>
+            <div class="comunidad__area4">
+                <img class="image image--comunidad" src="images/comunidad4.PNG" /></div>
+            <div class="comunidad__area5"><img class="image image--comunidad" src="images/comunidad5.PNG" />
+            </div>
+            <div class="comunidad__area6">
+                <img class="image image--comunidad" src="images/comunidad6.jpg" /></div>
+            <div class="comunidad__area7"><img class="image image--comunidad" src="images/comunidad7.jpg" />
+            </div>
+            <div class="comunidad__area8">
+                <img class="image image--comunidad" src="images/comunidad8.jpg" />
+            </div>
+            <div class="comunidad__area9">
+                <img class="image image--comunidad" src="images/comunidad9.jpg" />
+            </div>
+        </section>
+        <div id = "button" class="button__align--right"><!--cambiarlo-->
+            <button class="button__align--right">
+                <img src="images/botonCargarMas.PNG"></button>
+        </div>
+        <br />
+        <p>
+            Descubre Porsche
+        </p>
+        <div class="grid grid--asistente"><!-- DESCUBRIR -->
+            <img class="image image--4col" src="images/descubre1.jpg" />
+            <img class="image image--4col" src="images/descubre2.jpg" />
+            <img class="image image--4col" src="images/descubre3.jpg" />
+            <img class="image image--4col" src="images/descubre4.jpg" />
+        </div>
+        <div>
+            <span class="textDescubre1">>Tequipment Sound & Design.</span>
+            <span class="textDescubre2">> Porsche Exlusive Manufaktur.</span>
+            <span class="textDescubre3">> Radiant Power.</span>
+            <span class="textDescubre4">> Kit de Bienvenida.</span>
+        </div>
     </body>
 </html>

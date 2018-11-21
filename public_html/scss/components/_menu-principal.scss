@@ -1,0 +1,22 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21-nov-2018, 20:38:02
+    Author     : kokek
+*/
+
+.menu-principal{
+    width: auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.menu-principal__item{
+    margin-right: 20px;
+}
+.menu-principal__item a:hover{
+    background-color: $hooverMenu;
+}

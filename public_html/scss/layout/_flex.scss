@@ -1,0 +1,31 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21-nov-2018, 20:09:21
+    Author     : kokek
+*/
+
+.flex{
+  display: flex;
+}
+.flex--horizontal{
+  flex-direction: row;
+}
+.flex--vertical{
+  flex-direction: column;
+}
+.flex--izquierda{
+  justify-content: flex-start;
+}
+.flex--centrado{
+  justify-content: center;
+}
+.flex--derecha{
+  justify-content: flex-end;
+}
+.flex__item{
+  flex-grow: 1;
+}

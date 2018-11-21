@@ -388,7 +388,7 @@ li a {
   text-decoration: none; }
 
 li a:hover {
-  background-color: #111; }
+  background-color: #807D7D; }
 
 .menu ul {
   list-style-type: none;
@@ -406,9 +406,6 @@ li a:hover {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none; }
-
-.menu li a:hover {
-  background-color: #111; }
 
 .menu li:nth-child(1) {
   margin-right: auto; }
@@ -478,7 +475,7 @@ li a:hover {
 
 .grid {
   display: grid;
-  text-align: center; }
+  justify-content: center; }
 
 .grid--1col {
   width: 100px; }
@@ -555,11 +552,42 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
+    Created on : 21-nov-2018, 20:09:21
+    Author     : kokek
+*/
+.flex {
+  display: flex; }
+
+.flex--horizontal {
+  flex-direction: row; }
+
+.flex--vertical {
+  flex-direction: column; }
+
+.flex--izquierda {
+  justify-content: flex-start; }
+
+.flex--centrado {
+  justify-content: center; }
+
+.flex--derecha {
+  justify-content: flex-end; }
+
+.flex__item {
+  flex-grow: 1; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
     Created on : 05-nov-2018, 9:35:54
     Author     : Kokekui
 */
 .image {
-  display: inline; }
+  display: inline;
+  position: relative; }
 
 .image--centrado1 {
   display: block;
@@ -572,7 +600,7 @@ and open the template in the editor.
 .image--configure {
   width: 600px; }
 
-.image--asistente {
+.image--4col {
   width: 100%;
   height: 320px; }
 
@@ -588,10 +616,6 @@ and open the template in the editor.
   width: 100%;
   height: 100%; }
 
-.image--descubre {
-  width: 100%;
-  height: 100%; }
-
 span {
   font-size: 15px; }
 
@@ -600,3 +624,46 @@ span {
 
 h1 {
   text-align: center; }
+
+.texto--dentro-imagen {
+  position: absolute;
+  top: 10px;
+  left: 10px; }
+
+.contenedor {
+  position: relative; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21-nov-2018, 20:32:54
+    Author     : kokek
+*/
+.logo {
+  width: 123px;
+  height: 75px;
+  margin: 0 auto; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21-nov-2018, 20:38:02
+    Author     : kokek
+*/
+.menu-principal {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.menu-principal__item {
+  margin-right: 20px; }
+
+.menu-principal__item a:hover {
+  background-color: #807D7D; }
