@@ -4,13 +4,20 @@ span{
 .texto--centrado{
     text-align: center;
 }
-h1{
-    text-align: center;
+.texto{
+    font-family: arial;
 }
-.texto--dentro-imagen{
+.texto--dentro-imagen-modelos{
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 310px;
+    left: 220px;
+    color: $textoImgModelos;
+}
+.texto--dentro-imagen-configure{
+    position: absolute;
+    top: 310px;
+    left: 230px;
+    color: $textoImgConfigure;
 }
 .contenedor{
     position:relative;

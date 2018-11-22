@@ -622,13 +622,20 @@ span {
 .texto--centrado {
   text-align: center; }
 
-h1 {
-  text-align: center; }
+.texto {
+  font-family: arial; }
 
-.texto--dentro-imagen {
+.texto--dentro-imagen-modelos {
   position: absolute;
-  top: 10px;
-  left: 10px; }
+  top: 310px;
+  left: 220px;
+  color: white; }
+
+.texto--dentro-imagen-configure {
+  position: absolute;
+  top: 310px;
+  left: 230px;
+  color: black; }
 
 .contenedor {
   position: relative; }
@@ -667,3 +674,15 @@ and open the template in the editor.
 
 .menu-principal__item a:hover {
   background-color: #807D7D; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22-nov-2018, 10:01:47
+    Author     : Kokekui
+*/
+h1 {
+  text-align: center; }
