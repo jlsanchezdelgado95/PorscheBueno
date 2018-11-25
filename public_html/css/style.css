@@ -410,72 +410,10 @@ li a:hover {
 .menu li:nth-child(1) {
   margin-right: auto; }
 
-.comunidad__area1 {
-  grid-area: image1; }
-
-.comunidad__area2 {
-  grid-area: image2; }
-
-.comunidad__area3 {
-  grid-area: image3; }
-
-.comunidad__area4 {
-  grid-area: image4; }
-
-.comunidad__area5 {
-  grid-area: image5; }
-
-.comunidad__area6 {
-  grid-area: image6; }
-
-.comunidad__area7 {
-  grid-area: image7; }
-
-.comunidad__area8 {
-  grid-area: image8; }
-
-.comunidad__area9 {
-  grid-area: image9; }
-
-.configureCoche1 {
-  grid-area: configureCoche1; }
-
-.configureCoche2 {
-  grid-area: configureCoche2; }
-
-.configureCoche3 {
-  grid-area: configureCoche3; }
-
-.asistenteCoche1 {
-  grid-area: asistenteCoche1; }
-
-.asistenteCoche2 {
-  grid-area: asistenteCoche2; }
-
-.asistenteCoche3 {
-  grid-area: asistenteCoche3; }
-
-.asistenteCoche4 {
-  grid-area: asistenteCoche4; }
-
-.modeloCoche1 {
-  grid-area: modeloCoche1; }
-
-.modeloCoche2 {
-  grid-area: modeloCoche2; }
-
-.modeloCoche3 {
-  grid-area: modeloCoche3; }
-
-.modeloCoche4 {
-  grid-area: modeloCoche4; }
-
-.modeloeCoche5 {
-  grid-area: modeloCoche5; }
-
 .grid {
   display: grid;
-  justify-content: center; }
+  justify-content: center;
+  margin: 0 auto; }
 
 .grid--1col {
   width: 100px; }
@@ -504,38 +442,98 @@ li a:hover {
 .grid--9col {
   width: 100px; }
 
+.grid__area1 {
+  grid-area: column1; }
+
+.grid__area2 {
+  grid-area: column2; }
+
+.grid__area3 {
+  grid-area: column3; }
+
+.grid__area4 {
+  grid-area: column4; }
+
+.grid__area5 {
+  grid-area: column5; }
+
+.grid__area6 {
+  grid-area: column6; }
+
+.grid__area7 {
+  grid-area: column7; }
+
+.grid__area8 {
+  grid-area: column8; }
+
+.grid__area9 {
+  grid-area: column9; }
+
+.grid__area10 {
+  grid-area: column10; }
+
+.grid__area11 {
+  grid-area: column11; }
+
+.grid__area12 {
+  grid-area: column12; }
+
+.grid__area13 {
+  grid-area: column13; }
+
+.grid__area14 {
+  grid-area: column14; }
+
+.grid__area15 {
+  grid-area: column15; }
+
+.grid__area16 {
+  grid-area: column16; }
+
+.grid__area17 {
+  grid-area: column17; }
+
+.grid__area18 {
+  grid-area: column18; }
+
+.grid__area19 {
+  grid-area: column19; }
+
+.grid__area20 {
+  grid-area: column20; }
+
 .grid--3col {
   width: 100%;
-  grid-template-areas: 'configureCoche1 configureCoche2 configureCoche3'; }
+  grid-template-areas: 'column1 column2 column3'; }
 
 .grid--asistente {
-  width: 100%;
-  grid-template-areas: 'asistenteCoche1 asistenteCoche1 asistenteCoche2 asistenteCoche3 asistenteCoche4'; }
+  width: 80%;
+  grid-template-areas: 'column1 column1 column2 column3 column4'; }
 
 .grid--5col {
   width: 100%;
-  grid-template-areas: 'modeloCoche1 modeloCoche2 modeloCoche3 modeloCoche4 modeloCoche5'; }
+  grid-template-areas: 'column1 column2 column3 column4 column5'; }
 
 @media (max-width: 1440px) {
   .grid--5col {
-    grid-template-areas: 'modeloCoche1 modeloCoche2 modeloCoche3' 'modeloCoche4 modeloCoche5'; }
+    grid-template-areas: 'column1 column2 column3' 'column4 column5 .'; }
   .grid--3col {
-    grid-template-areas: 'configureCoche1 configureCoche2' 'configureCoche3'; } }
+    grid-template-areas: 'column1 column2' 'column3 .'; } }
 
 @media (max-width: 960px) {
   .grid--5col {
-    grid-template-areas: 'modeloCoche1 modeloCoche2' 'modeloCoche3 modeloCoche4' 'modeloCoche5'; } }
+    grid-template-areas: 'column1 column2' 'column3 column4' 'column5 .'; } }
 
 @media (max-width: 480px) {
   .grid--5col {
-    grid-template-areas: 'modeloCoche1' 'modeloCoche2' 'modeloCoche3' 'modeloCoche4' 'modeloCoche5'; }
+    grid-template-areas: 'column1' 'column2' 'column3' 'column4' 'column5'; }
   .grid--3col {
-    grid-template-areas: 'configureCoche1' 'configureCoche2' 'configureCoche3'; } }
+    grid-template-areas: 'column1' 'column2' 'column3'; } }
 
 .grid--complicado {
   display: grid;
   text-align: center;
-  grid-template-areas: 'image1 image1 image2 image3 image4 image4' 'image1 image1 image7 image7 image4 image4' 'image5 image6 image7 image7 image8 image9';
+  grid-template-areas: 'column1 column1 column2 column3 column4 column4' 'column1 column1 column7 column7 column4 column4' 'column5 column6 column7 column7 column8 column9';
   width: 1200px;
   grid-gap: 0px;
   justify-items: center;
@@ -602,7 +600,7 @@ and open the template in the editor.
 
 .image--4col {
   width: 100%;
-  height: 320px; }
+  height: 340px; }
 
 .image--comunidad-pequenyo {
   width: 200px;
@@ -625,13 +623,13 @@ span {
 .texto {
   font-family: arial; }
 
-.texto--dentro-imagen-modelos {
+.texto--dentro-imagen-blanco {
   position: absolute;
   top: 310px;
   left: 220px;
   color: white; }
 
-.texto--dentro-imagen-configure {
+.texto--dentro-imagen-negro {
   position: absolute;
   top: 310px;
   left: 230px;
@@ -686,3 +684,22 @@ and open the template in the editor.
 */
 h1 {
   text-align: center; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25-nov-2018, 22:03:03
+    Author     : kokek
+*/
+.boton {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px; }

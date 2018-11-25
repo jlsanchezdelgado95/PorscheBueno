@@ -7,17 +7,17 @@ span{
 .texto{
     font-family: arial;
 }
-.texto--dentro-imagen-modelos{
+.texto--dentro-imagen-blanco{
     position: absolute;
     top: 310px;
     left: 220px;
-    color: $textoImgModelos;
+    color: $textoImgBlanco;
 }
-.texto--dentro-imagen-configure{
+.texto--dentro-imagen-negro{
     position: absolute;
     top: 310px;
     left: 230px;
-    color: $textoImgConfigure;
+    color: $textoImgNegro;
 }
 .contenedor{
     position:relative;

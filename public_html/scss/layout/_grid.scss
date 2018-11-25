@@ -1,30 +1,8 @@
-.comunidad__area1{ grid-area:image1;}
-.comunidad__area2{ grid-area:image2;}
-.comunidad__area3{ grid-area:image3;}
-.comunidad__area4{ grid-area:image4;}
-.comunidad__area5{ grid-area:image5;}
-.comunidad__area6{ grid-area:image6;}
-.comunidad__area7{ grid-area:image7;}
-.comunidad__area8{ grid-area:image8;}
-.comunidad__area9{ grid-area:image9;}
 
-.configureCoche1{grid-area:configureCoche1;}
-.configureCoche2{grid-area:configureCoche2;}
-.configureCoche3{grid-area:configureCoche3;}
-
-.asistenteCoche1{grid-area:asistenteCoche1;}
-.asistenteCoche2{grid-area:asistenteCoche2;}
-.asistenteCoche3{grid-area:asistenteCoche3;}
-.asistenteCoche4{grid-area:asistenteCoche4;}
-
-.modeloCoche1{grid-area:modeloCoche1;}
-.modeloCoche2{grid-area:modeloCoche2;}
-.modeloCoche3{grid-area:modeloCoche3;}
-.modeloCoche4{grid-area:modeloCoche4;}
-.modeloeCoche5{grid-area:modeloCoche5;}
 .grid{
     display: grid;
     justify-content: center;
+    margin: 0 auto;
 }
 @for $i from 1 to $totalColumnas{
     .grid--#{$i}col{
@@ -32,60 +10,63 @@
     }
 }
 
+@for $i from 1 through $grid-columns {
+    .grid__area#{$i} {
+        grid-area:column#{$i};
+    }
+}
+
 .grid--3col{
     width: 100%;
     grid-template-areas:
-        'configureCoche1 configureCoche2 configureCoche3';
+        'column1 column2 column3';
 }
 .grid--asistente{
-    width: 100%;
+    width: 80%;
     grid-template-areas:
-        'asistenteCoche1 asistenteCoche1 asistenteCoche2 asistenteCoche3 asistenteCoche4';
+        'column1 column1 column2 column3 column4';
 }
 
 .grid--5col{
     width: 100%;
     grid-template-areas:
-        'modeloCoche1 modeloCoche2 modeloCoche3 modeloCoche4 modeloCoche5';
+        'column1 column2 column3 column4 column5';
 }
-
-
-
 @media (max-width:1440px){
     .grid--5col{
         grid-template-areas:
-            'modeloCoche1 modeloCoche2 modeloCoche3'
-            'modeloCoche4 modeloCoche5';
+            'column1 column2 column3'
+            'column4 column5 .';
     }
     .grid--3col{
         grid-template-areas:
-            'configureCoche1 configureCoche2'
-            'configureCoche3';
+            'column1 column2'
+            'column3 .';
     }
 }
 @media (max-width:960px){
     .grid--5col{
         grid-template-areas:
-            'modeloCoche1 modeloCoche2'
-            'modeloCoche3 modeloCoche4'
-            'modeloCoche5';
+            'column1 column2'
+            'column3 column4'
+            'column5 .';
     }
 }
 @media (max-width:480px){
     .grid--5col{
         grid-template-areas:
-            'modeloCoche1'
-            'modeloCoche2'
-            'modeloCoche3'
-            'modeloCoche4'
-            'modeloCoche5';
+            'column1'
+            'column2'
+            'column3'
+            'column4'
+            'column5';
     }
 
     .grid--3col{
         grid-template-areas:
-            'configureCoche1'
-            'configureCoche2'
-            'configureCoche3';
+            'column1'
+            'column2'
+            'column3';
     }
 }
 
@@ -93,9 +74,9 @@
     display:grid;
     text-align:center;
     grid-template-areas:
-        'image1 image1 image2 image3 image4 image4'
-        'image1 image1 image7 image7 image4 image4'
-        'image5 image6 image7 image7 image8 image9';
+        'column1 column1 column2 column3 column4 column4'
+        'column1 column1 column7 column7 column4 column4'
+        'column5 column6 column7 column7 column8 column9';
     width:1200px;
     grid-gap:0px;
     justify-items: center;
